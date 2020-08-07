@@ -1,0 +1,635 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/08/2020, 05:02:38 PM
+    Author     : rafag
+*/
+
+body{
+    background-image: url("zanahoria1.jpg") ;
+}
+div.wrap {
+	text-align: center;
+}
+
+div.pagesize {
+	width: 999px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+div.module-box {
+	width: 100%;
+}
+
+div.module-box div.inner {
+	padding: 10px 24px;
+}
+
+div.three-boxes {
+	float: left;
+	width: 33.3%;
+}
+
+div.vernav {
+	margin: 0;
+}
+
+div.vernav ul {
+	margin: 0;
+	padding: 0;
+}
+
+div.vernav li {
+	list-style-type: none;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+div.vernav ul li, div.vernav ul li a, div.vernav ul li, div.vernav ul li a span {
+	float: left;
+	display: block;
+}
+
+
+
+
+#header-wrap {
+	background: url(../images/header_bg.gif) left top repeat-x;
+	height: 100px;
+}
+
+h1#logo {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#topnav {
+	margin-top: 30px;
+	float: right;
+}
+
+#topnav a {
+	margin-left: 8px;
+}
+
+#mainnav-wrap {
+	height: 40px;
+	background: url(../images/mainnav_bg.gif) left top repeat-x;
+}
+
+#mainnav {
+	text-align: center;
+}
+
+#mainnav ul {
+	margin: 0 auto;
+	text-align: left;
+}
+
+#mainnav ul li {
+	margin: 0;
+}
+
+#mainnav ul span {
+	height: 40px;
+	line-height: 46px;
+	background: url(../images/mainnav_sep.gif) right top no-repeat;
+	padding: 0 20px;
+	font-weight: bold;
+}
+
+#mainnav ul #active span {
+	color: orange;
+	font-weight: bold;
+}
+
+#container-wrap {
+	background: orange url(../images/bg_rp.gif) left top repeat-x;
+	height: 500px;
+}
+
+#leftcol {
+	background: orange url(../images/leftcol_bg.gif) right top no-repeat;
+	width: 185px;
+	height: 500px;
+	float: left;
+}
+
+#rightcol {
+	background: orange url(.gif) left top no-repeat;
+	width: 185px;
+	height: 500px;
+	float: right;
+}
+
+#maincol {
+	width: 549px;
+	float: left;
+	height: 800px;
+}
+
+#banner {
+	height: 350px;
+	background: url(Esteticas.gif) left top no-repeat;
+}
+
+#content-wrap {
+	background: url(../images/main_footer.jpg) left top repeat-y;
+}
+
+#content {
+	background: url(.jpg) left bottom no-repeat;
+	padding: 6px 15px 35px;
+}
+
+#banner-content {
+	margin: 90px 25px 0 0;
+	width: 325px;
+	text-align: right;
+	float: right;
+}
+
+#banner {
+	color: orange;
+}
+
+#banner h1 {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+#banner p {
+	margin-top: -8px;
+}
+
+.yellow {
+	color: #999966;
+	font-weight: bold;
+}
+
+.f14 {
+	font-size: 14px;
+}
+
+img.left {
+	float: left;
+	margin: 5px 10px 0 0;
+}
+
+#footer {
+	padding: 18px 0;
+	color: #000;
+	font-size: 11px;
+	text-align: center;
+}
+
+div.inner {
+	padding: 36px 12px;
+	color: black;
+}
+
+#contenedor{
+	width: 300px;
+     margin: 0 auto;
+}
+    .ex2 img{
+    height: 100px;
+    width: 300px;
+    margin: 15px 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+   .ex2 img:hover {
+   height: 133px;
+   width: 400px;
+   margin-left: -50px;
+}
+
+
+#nombre-cv{
+	background-color:
+	#4caf50;
+	color:#fff;
+	text-aling:center;
+	padding:5px 25px;
+	margin: none;
+}
+.EncabezadoDerecha{
+	border: 2px solid gray;
+	text-aling:center;
+	padding: 2px 50px;
+}
+.EncabezadoDerecha2{
+	border: 3px solid gray;
+	text-aling:center;
+	padding: 2px 50px;
+	width: 200;
+}
+p{
+	text-aling: justify;
+}
+.SeccionIzquierda{
+	background-color: #000;
+	color: #fff;
+	text-aling: justify;
+}
+.EncabezadoIzquierda{
+	border: 2px solid #fff;
+	text-aling: center;
+	padding: 2px 50px;
+}
+/* RESET BROWSER STYLES */
+
+* { margin: 0pt; padding: 0pt; }
+
+blockquote, q { quotes: "" ""; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+caption, th, td { font-weight: normal; text-align: left; }
+
+em { font-style: italic; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0pt none;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0pt;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0pt;
+	padding: 0pt;
+	vertical-align: baseline;
+}
+
+strong { font-weight: bold; }
+
+table { border-collapse: separate; border-spacing: 0pt; }
+
+form { margin: 0; padding: 0; }
+
+form label { cursor: pointer; }
+
+/* CLEARFIX FOR BOXMODEL */
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+
+* html > body .clearfix {
+	width: 100%;
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/* Firefox Scrollbar Hack*/
+html {
+	margin-bottom: 1px;
+	height: 100%!important;
+	height: auto;
+}
+
+a { text-decoration: none; color: orange;}
+
+a:hover {
+	cursor: pointer; 
+	color: #000;
+	text-decoration: underline;
+}
+
+body {
+	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 62.5%;
+	color: #666666;
+	background: red;
+	min-height: 100%;
+	position: relative;
+
+}
+
+#mainwrap {
+	font-size: 1.2em;
+	line-height: 160%;
+	
+}
+
+ h3, h4, h5 {
+	font-weight: normal;
+	color: black;
+}
+
+h1 { font-size: 3em; }
+
+h1, h2, h3, h4, h5, p, ul { margin: 10px 0; }
+
+h2 { font-size: 2.4em; }
+
+h3 { font-size: 1.8em; }
+
+h4 { font-size: 1.4em; text-transform: uppercase; }
+
+ul li { margin-left: 15px; margin-bottom: 5px; }
+
+.button {
+	padding: 2px 8px;
+	border: 1px solid #47210C;
+	background: url(../images/but-bg.gif) repeat-x center red;
+	font-variant: small-caps;
+	color: #F8B150;
+}
+
+.clr { clear: both; }
+
+.inputbox {
+	border: 1px solid green;
+	padding: 3px 2px;
+	background: #8A5C2B;
+}
+
+#footer_terms {
+width: 90%; bottom:0px; left: 0px; position: absolute; height: 30px;
+}
+
+#footer_terms h1 {
+	padding: 100px 0px 0px 0px; color: #c6c6c6;
+	text-align:right;
+	border:0px;
+	font-variant:normal;font-size: 1em;font-weight: normal;
+	text-decoration:none;background: none;
+	
+}
+
+#footer_terms a  { text-decoration: underline;}
+
+#footer_terms strong,#footer_terms a {
+	color: orange;
+	font-weight: normal;
+	background: none;
+}
+
+#resol {
+	text-align:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	position:fixed;
+	font-size: 10px;
+	width:230px;
+	top:0px;
+	left:1280px;
+	margin:0 auto;
+	background:orange;
+	text-align:center;
+} 
+
+#resol h1 {
+	background:none;
+	font-size: 15px;
+	letter-spacing:3px;
+	padding:0px;
+	margin:0px;
+	border: 0px;
+} 
+
+#resol h2 {
+	font-size:9px;
+	letter-spacing:4px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	background: blue;
+}
+a { text-decoration: none; color: orange;}
+
+a:hover {
+	cursor: pointer; 
+	color: #000;
+	text-decoration: underline;
+}
+
+body {
+	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 62.5%;
+	color: #666666;
+	background: red;
+	min-height: 100%;
+	position: relative;
+
+}
+
+#mainwrap {
+	font-size: 1.2em;
+	line-height: 160%;
+	
+}
+
+ h3, h4, h5 {
+	font-weight: normal;
+	color: black;
+}
+
+h1 { font-size: 3em; }
+
+h1, h2, h3, h4, h5, p, ul { margin: 10px 0; }
+
+h2 { font-size: 2.4em; }
+
+h3 { font-size: 1.8em; }
+
+h4 { font-size: 1.4em; text-transform: uppercase; }
+
+ul li { margin-left: 15px; margin-bottom: 5px; }
+
+.button {
+	padding: 2px 8px;
+	border: 1px solid #47210C;
+	background: url(../images/but-bg.gif) repeat-x center red;
+	font-variant: small-caps;
+	color: #F8B150;
+}
+
+.clr { clear: both; }
+
+.inputbox {
+	border: 1px solid green;
+	padding: 3px 2px;
+	background: #8A5C2B;
+}
+
+#footer_terms {
+width: 90%; bottom:0px; left: 0px; position: absolute; height: 30px;
+}
+
+#footer_terms h1 {
+	padding: 100px 0px 0px 0px; color: #c6c6c6;
+	text-align:right;
+	border:0px;
+	font-variant:normal;font-size: 1em;font-weight: normal;
+	text-decoration:none;background: none;
+	
+}
+
+#footer_terms a  { text-decoration: underline;}
+
+#footer_terms strong,#footer_terms a {
+	color: orange;
+	font-weight: normal;
+	background: none;
+}
+
+#resol {
+	text-align:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	position:fixed;
+	font-size: 10px;
+	width:230px;
+	top:0px;
+	left:1280px;
+	margin:0 auto;
+	background:orange;
+	text-align:center;
+} 
+
+#resol h1 {
+	background:none;
+	font-size: 15px;
+	letter-spacing:3px;
+	padding:0px;
+	margin:0px;
+	border: 0px;
+} 
+
+#resol h2 {
+	font-size:9px;
+	letter-spacing:4px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	background: blue;
+}
+a { text-decoration: none; color: orange;}
+
+a:hover {
+	cursor: pointer; 
+	color: #000;
+	text-decoration: underline;
+}
+
+body {
+	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 62.5%;
+	color: #666666;
+	background: red;
+	min-height: 100%;
+	position: relative;
+
+}
+
+#mainwrap {
+	font-size: 1.2em;
+	line-height: 160%;
+	
+}
+
+ h3, h4, h5 {
+	font-weight: normal;
+	color: black;
+}
+
+h1 { font-size: 3em; }
+
+h1, h2, h3, h4, h5, p, ul { margin: 10px 0; }
+
+h2 { font-size: 2.4em; }
+
+h3 { font-size: 1.8em; }
+
+h4 { font-size: 1.4em; text-transform: uppercase; }
+
+ul li { margin-left: 15px; margin-bottom: 5px; }
+
+.button {
+	padding: 2px 8px;
+	border: 1px solid #47210C;
+	background: url(../images/but-bg.gif) repeat-x center red;
+	font-variant: small-caps;
+	color: #F8B150;
+}
+
+.clr { clear: both; }
+
+.inputbox {
+	border: 1px solid green;
+	padding: 3px 2px;
+	background: #8A5C2B;
+}
+
+#footer_terms {
+width: 90%; bottom:0px; left: 0px; position: absolute; height: 30px;
+}
+
+#footer_terms h1 {
+	padding: 100px 0px 0px 0px; color: #c6c6c6;
+	text-align:right;
+	border:0px;
+	font-variant:normal;font-size: 1em;font-weight: normal;
+	text-decoration:none;background: none;
+	
+}
+
+#footer_terms a  { text-decoration: underline;}
+
+#footer_terms strong,#footer_terms a {
+	color: orange;
+	font-weight: normal;
+	background: none;
+}
+
+#resol {
+	text-align:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	position:fixed;
+	font-size: 10px;
+	width:230px;
+	top:0px;
+	left:1280px;
+	margin:0 auto;
+	background:orange;
+	text-align:center;
+} 
+
+#resol h1 {
+	background:none;
+	font-size: 15px;
+	letter-spacing:3px;
+	padding:0px;
+	margin:0px;
+	border: 0px;
+} 
+
+#resol h2 {
+	font-size:9px;
+	letter-spacing:4px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	background: blue;
+}
