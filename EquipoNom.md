@@ -2,3 +2,4 @@
 Guerrero Sandoval Rafael
 Rangel Mendoza Alan E
 Quintana Moncada Brandon
+Solís Luna Alan Benjamín
