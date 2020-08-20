@@ -8,9 +8,6 @@ and open the template in the editor.
     Author     : rafag
 */
 
-body{
-    background-image: url("zanahoria1.jpg") ;
-}
 div.wrap {
 	text-align: center;
 }
@@ -58,9 +55,9 @@ div.vernav ul li, div.vernav ul li a, div.vernav ul li, div.vernav ul li a span 
 
 
 #header-wrap {
-	background: url(../images/header_bg.gif) left top repeat-x;
+	background:black url(../images/header_bg.gif) left top repeat-x;    /* Encabezado  */
 	height: 100px;
-}
+ }
 
 h1#logo {
 	display: block;
@@ -82,7 +79,7 @@ h1#logo {
 
 #mainnav-wrap {
 	height: 40px;
-	background: url(../images/mainnav_bg.gif) left top repeat-x;
+	background: black url(../images/mainnav_bg.gif) left top repeat-x;  /* 2do encabezado */
 }
 
 #mainnav {
@@ -101,30 +98,30 @@ h1#logo {
 #mainnav ul span {
 	height: 40px;
 	line-height: 46px;
-	background: url(../images/mainnav_sep.gif) right top no-repeat;
+	background:  url(../images/mainnav_sep.gif) right top no-repeat;
 	padding: 0 20px;
 	font-weight: bold;
 }
 
 #mainnav ul #active span {
-	color: orange;
+	color: black;
 	font-weight: bold;
 }
 
 #container-wrap {
-	background: orange url(../images/bg_rp.gif) left top repeat-x;
+	background: white url(../images/bg_rp.gif) left top repeat-x;    /* Parte central de la pagina */
 	height: 500px;
 }
 
 #leftcol {
-	background: orange url(../images/leftcol_bg.gif) right top no-repeat;
+	background: white url(../images/leftcol_bg.gif) right top no-repeat;  /* Parte central de la pagina */
 	width: 185px;
 	height: 500px;
 	float: left;
 }
 
 #rightcol {
-	background: orange url(.gif) left top no-repeat;
+	background: white url(.gif) left top no-repeat;           /* Parte central de la pagina */
 	width: 185px;
 	height: 500px;
 	float: right;
@@ -133,20 +130,20 @@ h1#logo {
 #maincol {
 	width: 549px;
 	float: left;
-	height: 800px;
+	height: 900px;
 }
 
 #banner {
-	height: 350px;
-	background: url(Esteticas.gif) left top no-repeat;
+	height: 500px;
+	background:  url(este1.gif) left top no-repeat;    /*Espacio imagen central */
 }
 
 #content-wrap {
-	background: url(../images/main_footer.jpg) left top repeat-y;
+	background: url(../images/main_footer.jpg) left top repeat-y;   /*Parte central 2.0*/
 }
 
 #content {
-	background: url(.jpg) left bottom no-repeat;
+	background:  url(.jpg) left bottom no-repeat;      /*Parte central 3.0*/
 	padding: 6px 15px 35px;
 }
 
@@ -158,7 +155,7 @@ h1#logo {
 }
 
 #banner {
-	color: orange;
+	color: black;
 }
 
 #banner h1 {
@@ -220,7 +217,7 @@ div.inner {
 #nombre-cv{
 	background-color:
 	#4caf50;
-	color:#fff;
+	color: purple;
 	text-aling:center;
 	padding:5px 25px;
 	margin: none;
@@ -320,8 +317,8 @@ a:hover {
 body {
 	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 62.5%;
-	color: #666666;
-	background: red;
+	color: #B59E5C;
+	background: black;                             /*Nada */
 	min-height: 100%;
 	position: relative;
 
@@ -429,7 +426,7 @@ body {
 	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 62.5%;
 	color: #666666;
-	background: red;
+	background: black;                               /*Encabezado color*/
 	min-height: 100%;
 	position: relative;
 
@@ -537,7 +534,7 @@ body {
 	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 62.5%;
 	color: #666666;
-	background: red;
+	background: #DCD0C0;       
 	min-height: 100%;
 	position: relative;
 
@@ -633,3 +630,4 @@ width: 90%; bottom:0px; left: 0px; position: absolute; height: 30px;
 	border:0px;
 	background: blue;
 }
+
