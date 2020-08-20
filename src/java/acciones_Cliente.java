@@ -10,9 +10,8 @@
  */
 import java.util.*;
 import java.sql.*;
-public class acciones_usuario {
-    
-    public static Connection getConnection(){
+public class acciones_Cliente {
+     public static Connection getConnection(){
         String url, user, password;
         //Establecemos la ruta donde esta la bd
         url = "jdbc:mysql:3306/localhost/";
@@ -40,9 +39,8 @@ public class acciones_usuario {
         return con;
        
    }       
-        //registrar nuevo usuario 
-
-    public static int Registrar_Usuario(Usuario a) {
+   // registrar nueva cita 
+      public static int Registrar_NuevaC(Cliente a) {
         int Estatus = 0;
         
         try{
@@ -53,11 +51,11 @@ public class acciones_usuario {
             //obtener elementos 
             PreparedStatement ps = con.prepareStatement(q);
             //obtener los elementos de la tabla get y set
-            ps.setString(1, a.getNom_clie());
-            ps.setString(2, a.getDirec());
-            ps.setString(3, a.getTele_clien());
-            ps.setString(4, a.getCorre_clien());
-            ps.setString(5, a.getClave());
+            ps.setString(1, a.getFech_cit());
+            ps.setString(2, a.getPag_ser());
+            ps.setString(3, a.getPag_ser());
+            ps.setString(4, a.getNom_sor());
+            
             
             //ejecutar la query
             Estatus = ps.executeUpdate();
@@ -74,24 +72,23 @@ public class acciones_usuario {
         }
         return Estatus;
     }
-    //actualizar usuario
-    public static int Actualizar_Usuario(Usuario a) {
+      // registrar actualizar 
+      public static int Eliminar_C(Cliente a) {
         int Estatus = 0;
         
         try{
             //coneccion 
             Connection con = acciones_usuario.getConnection();
-            String q="Update tabla set atributo = ?,"
-                    +""
-                    +"";
+            String q="delete into ***(valores)"
+                     + "values()";
             //obtener elementos 
             PreparedStatement ps = con.prepareStatement(q);
             //obtener los elementos de la tabla get y set
-            ps.setString(1, a.getNom_clie());
-            ps.setString(2, a.getDirec());
-            ps.setString(3, a.getTele_clien());
-            ps.setString(4, a.getCorre_clien());
-            ps.setString(5, a.getClave());
+            //ps.setString(2, a.getId_cita());
+            ps.setString(2, a.getFech_cit());
+            ps.setString(3, a.getPag_ser());
+            ps.setString(4, a.getNom_sor());
+            
             
             //ejecutar la query
             Estatus = ps.executeUpdate();
@@ -108,24 +105,22 @@ public class acciones_usuario {
         }
         return Estatus;
     }
-        //eliminar usuario
-    public static int Eliminar_Usuario(Usuario a) {
+      // realizar pago
+      public static int Realizar_Pago(Cliente a) {
         int Estatus = 0;
         
         try{
             //coneccion 
             Connection con = acciones_usuario.getConnection();
-            String q="delete tabla set atributo = ?,"
-                    +""
-                    +"";
+            String q="insert into ***(valores)"
+                     + "values()";
             //obtener elementos 
             PreparedStatement ps = con.prepareStatement(q);
             //obtener los elementos de la tabla get y set
-            ps.setString(1, a.getNom_clie());
-            ps.setString(2, a.getDirec());
-            ps.setString(3, a.getTele_clien());
-            ps.setString(4, a.getCorre_clien());
-            ps.setString(5, a.getClave());
+            
+            ps.setString(2, a.getPag_ser());
+            ps.setString(3, a.getFech_cit());
+            
             
             //ejecutar la query
             Estatus = ps.executeUpdate();
@@ -141,6 +136,9 @@ public class acciones_usuario {
             System.out.println(e.getStackTrace());
         }
         return Estatus;
+    }
+
+    static void Eliminar_C(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-
